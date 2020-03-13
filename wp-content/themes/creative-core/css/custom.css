@@ -41,7 +41,7 @@ header.site-header {
 }
 /*--- Homepage top parallax section ---*/
 #home-intro .parallax {
-    padding-top: 200px;
+    padding-top: 215px;
     padding-bottom: 100px;
     text-shadow: 0 1px 5px #000000;
 }
@@ -101,11 +101,11 @@ header.site-header {
     margin: 8px 0 10px 0;
     font-size: 60px;
     font-weight: 800;
-    color: #6a452a;
+    color: #ed6a08;
 }
 .machine-title strong {
     font-weight: 800;
-    color: #6a452a;
+    color: #ed6a08;
 }
 .machine-block [data-button] {
     font-size: 18px;
