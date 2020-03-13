@@ -3,45 +3,85 @@
 ** Please use this file to add your custom styles
 **==================================================*/
 
-/*--- Home Buttons ---*/
-section.home-buttons [data-button] {
-    margin: 0;
+/*--- Toolbar ---*/
+#toolbar .widget {
+    display: inline-block;
+    vertical-align: middle;
 }
-@media screen and (max-width: 1200px) {
-    section.home-buttons [data-button] {
-        font-size: 20px;
-        padding: .65em 1em .65em 1em;
+#toolbar .call-us {
+    display: block;
+    text-align: center;
+    margin-right: 15px;
+    color: #eaeaea;
+}
+#toolbar .call-us:hover {
+    color: #ed6a08;
+}
+#toolbar .call-us span {
+    display: none;
+}
+/*--- Main Menu ---*/
+header.site-header {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+}
+@media screen and (min-width: 1200px) {
+    header .menu-wrap,
+    header #toolbar {
+        display: inline-block;
+        width: auto;
+        margin-top: 25px;
+    }
+    header .menu-wrap {
+        padding: 0;
+    }
+    header #toolbar {
+        padding-top: 8px;
+    }
+}
+/*--- Homepage top parallax section ---*/
+#home-intro .parallax {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    text-shadow: 0 1px 5px #000000;
+}
+#home-intro .parallax .section-title {
+    font-size: calc(100vw / 22);
+    line-height: 115%;
+    text-shadow: 0 1px 5px #000000;
+}
+#home-intro .parallax hr {
+    margin-bottom: 0;
+    border-width: 4px;
+    border-color: #ed6a08;
+}
+#home-intro .parallax hr+p {
+    margin-top: 0;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+}
+@media screen and (min-width: 1200px) {
+    #home-intro .parallax .section-title {
+        font-size: 66px;
     }
 }
 @media screen and (max-width: 991px) {
-    section.home-buttons [data-button] {
-        font-size: 16px;
-        font-weight: 600;
-        padding: .65em .65em .65em .65em;
+    #home-intro .parallax .section-title {
+        font-size: 46px;
     }
 }
-@media screen and (max-width: 767px) {
-    section.home-buttons [data-button] {
-        font-size: 16px;
-        font-weight: 600;
-        padding: .65em .65em .65em .65em;
-        margin: 5px 0;
-    }
+/*--- Home Services ---*/
+.services .panel .icon img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
 }
-/*--- Our Philosophy ---*/
-.our-philosophy {
-    padding-top: 60px;
-}
-.our-philosophy p {
-    margin-bottom: 30px;
-}
-/*--- Have A Question ---*/
-.have-question {
-    padding: 15px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.25);
-}
-.have-question .gform_footer {
-    text-align: center;
+.services .panel .icon {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
 }
 /*--- Machine Title ---*/
 .machine-block {
@@ -61,12 +101,39 @@ section.home-buttons [data-button] {
     margin: 8px 0 10px 0;
     font-size: 60px;
     font-weight: 800;
-    color: #1b8483;
+    color: #6a452a;
 }
 .machine-title strong {
     font-weight: 800;
-    color: #1b8483;
+    color: #6a452a;
 }
 .machine-block [data-button] {
     font-size: 18px;
+}
+/*--- Home Gallery ---*/
+#home-gallery .gallery-item {
+    padding: 5px;
+}
+.masonry-gallery .gallery-item > a {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(106,69,42,0.75);
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.masonry-gallery .gallery-item:hover > a {
+    box-shadow: 0 1px 8px #503420;
+}
+/*--- Page Defaults ---*/
+#page-header .header-content {
+    top: 65%;
+}
+/*--- Contact Page --*/
+.page-template-page_contact header.site-header {
+    position: relative;
+    background: rgba(0,0,0,0.8);
+}
+.page-template-page_contact #page-header {
+    padding-top: 0;
 }

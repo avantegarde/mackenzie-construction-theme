@@ -28,7 +28,7 @@ get_header(); ?>
         $contentLocation = custom_header_content_get_meta('custom_header_content_location') ? custom_header_content_get_meta('custom_header_content_location') : 'content-center';
         ?>
         <section id="page-header" class="<?php echo $contentLocation; ?> <?php echo strtolower($bannerHeight) ?>" style="background-image:url(<?php echo $image; ?>);">
-            <div class="container header-content">
+            <div class="header-content">
                 <?php
                 $customTitle = html_entity_decode( custom_header_content_get_meta('custom_header_content_title') );
                 $customHeaderCont = html_entity_decode( custom_header_content_get_meta('custom_header_content_content') );
