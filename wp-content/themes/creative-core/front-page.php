@@ -60,7 +60,7 @@ get_header(); ?>
             </div>
         </section> -->
 
-        <section id="home-services" class="green services">
+        <section id="home-services" class="brown services">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -97,7 +97,24 @@ get_header(); ?>
             </div>
         </section>
 
-        <section id="home-services" class="blank">
+        <section id="who-we-are" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-push-6" data-col="vision-statement">
+                        <img src="/wp-content/themes/creative-core/inc/images/parallax2.jpg" width="800" height="500">
+                    </div>
+                    <div class="col-sm-6  col-sm-pull-6 v-align" data-col="vision-statement">
+                        <div class="v-inner">
+                            <h3 class="mini-title">Who We Are</h3>
+                            <h4 class="block-left-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit nibus lorem, non rhoncus sem feugiat eu. Maecenas interdum imperdiet lacus non maximus.</h4>
+                            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="home-services" class="blank">
             <div class="parallax auto-height" data-plx-img="/wp-content/themes/creative-core/inc/images/parallax2.jpg">
                 <div class="container">
                     <div class="col-md-7 line-box float-right" data-col="hp-bottom-cta">
@@ -108,11 +125,11 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="home-gallery" class="home-gallery">
+        <section id="home-gallery" class="brown home-gallery">
             <div class="container">
-                <h3 class="section-title block-title center">Some of our work.</h3>
+                <h3 class="section-title block-title center" data-color="white">Our Work</h3>
                 <?php echo do_shortcode('[gallery size="medium" ids="34,33,32,31,30,29,28,27,26,25" masonry="true" lightbox="true"]'); ?>
             </div>
         </section>
