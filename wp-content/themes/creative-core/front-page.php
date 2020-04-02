@@ -156,7 +156,7 @@ get_header(); ?>
 </div><!-- #primary -->
 
 <!-- Start Modal -->
-<div id="news-modal" class="modal fade" tabindex="-1" role="dialog">
+<!-- <div id="news-modal" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -165,14 +165,11 @@ get_header(); ?>
             <div class="modal-body">
                 <h3 class="section-title">Join Our Mailing List</h3>
                 <p>Sign up for our SPECIALS, PROMOTIONS and UPDATES.</p>
-                <?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="true" tabindex="9999"]'); ?>
+                <?php // echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="true" tabindex="9999"]'); ?>
             </div>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div> -->
         </div>
     </div>
-</div>
+</div> -->
 <!-- END Modal -->
 
 <?php get_footer(); ?>
