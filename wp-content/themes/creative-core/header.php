@@ -269,7 +269,7 @@ else : ?>
             <div class="container">
                 <h1 id="logo">
                     <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                        <img src="<?php echo get_template_directory_uri() . '/inc/images/logo.png'; ?>" width="200"><span><?php bloginfo('name'); ?></span>
+                        <img src="<?php echo get_template_directory_uri() . '/inc/images/logo-light.png'; ?>" width="200"><span><?php bloginfo('name'); ?></span>
                     </a>
                 </h1>
                 <!-- Toolbar -->

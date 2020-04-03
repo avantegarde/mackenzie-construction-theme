@@ -25,20 +25,70 @@ header.site-header {
     position: absolute;
     background: rgba(0,0,0,0.8);
 }
-@media screen and (min-width: 1200px) {
-    header .menu-wrap,
-    header #toolbar {
-        display: inline-block;
-        width: auto;
-        margin-top: 25px;
+header #logo {
+    padding: 0;
+}
+header .menu-wrap {
+    padding: 13px 0 0 50px;
+}
+header nav.navbar-default #navbar-main > ul {
+    text-align: left;
+}
+@media screen and (max-width: 991px) {
+    header .menu-wrap {
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    header.site-header {
+        padding: 15px 0;
+    }
+    .navbar-toggle {
+        top: -40px;
+    }
+    #toolbar {
+        width: calc(100% - 100px);
+        padding: 0;
     }
     header .menu-wrap {
         padding: 0;
     }
+    header .menu-wrap .main-navigation ul#primary {
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    header #logo {
+        width: 100px;
+        max-width: 100px;
+    }
+    .navbar-toggle {
+        top: -26px;
+    }
+    #toolbar ul.social {
+        display: block;
+    }
+}
+@media screen and (max-width: 400px) {
+    #toolbar {
+        padding-left: 20px;
+        text-align: left;
+    }
+}
+/*@media screen and (min-width: 1200px) {
+    header .menu-wrap,
+    header #toolbar {
+        display: inline-block;
+        width: auto;
+        margin-top: 43px;
+    }
+    header .menu-wrap {
+        padding: 0 50px;
+    }
     header #toolbar {
         padding-top: 8px;
     }
-}
+}*/
 /*--- Homepage top parallax section ---*/
 #home-intro .parallax {
     padding-top: 215px;
@@ -123,6 +173,21 @@ header.site-header {
     font-size: 18px;
 }
 /*--- Home Gallery ---*/
+#sb_instagram .sb_instagram_header a {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    float: none;
+    color: #ffffff;
+}
+#sb_instagram .sb_instagram_header a h3 {
+    color: #ffffff;
+}
+#sb_instagram .sb_instagram_header a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 #home-gallery .gallery-item {
     padding: 5px;
 }

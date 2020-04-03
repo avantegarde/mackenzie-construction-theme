@@ -22,7 +22,14 @@ get_header(); ?>
     <?php if($bannerHeight != 'None'): ?>
         <section id="page-header" class="<?php echo strtolower($bannerHeight) ?>" style="background-image:url(<?php echo $image; ?>);">
             <div id="googlemap">
-                <iframe style="border:none;min-height:400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5854079.308264487!2d-76.526646!3d44.239245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc40d607974d977f5!2sFerusMedia!5e0!3m2!1sen!2sca!4v1481120813627" width="500" height="500" frameborder="0" allowfullscreen></iframe>
+                <?php
+                $customHeaderCont = html_entity_decode( custom_header_content_get_meta('custom_header_content_content') );
+                ?>
+                <?php if($customHeaderCont): ?>
+                    <iframe style="border:none;min-height:400px;" src="<?php echo $customHeaderCont; ?>" width="500" height="500" frameborder="0" allowfullscreen></iframe>
+                <?php else : ?>
+                    <iframe style="border:none;min-height:400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5854079.308264487!2d-76.526646!3d44.239245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc40d607974d977f5!2sFerusMedia!5e0!3m2!1sen!2sca!4v1481120813627" width="500" height="500" frameborder="0" allowfullscreen></iframe>
+                <?php endif; ?>
             </div>
         </section>
     <?php endif; ?>

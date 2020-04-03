@@ -4,7 +4,7 @@
 /*--- Toolbar ---*/
 #toolbar {
   display: block;
-  width: calc(100% - 250px);
+  width: calc(100% - 150px);
   margin: 0;
   padding: 0;
   color: #555555;
@@ -223,8 +223,8 @@ body.admin-bar header.site-header {
 /*--- Logo ---*/
 header #logo {
   display: block;
-  width: 250px;
-  max-width: 250px !important;
+  width: 150px;
+  max-width: 150px !important;
   height: auto;
   margin: 0;
   padding: 5px 0 0 0;
@@ -246,7 +246,7 @@ header nav.navbar-default {
 }
 header .menu-wrap {
   display: block;
-  width: calc(100% - 250px);
+  width: calc(100% - 150px);
   margin: 0;
   padding: 10px 0 0 0;
   color: #ffffff;
